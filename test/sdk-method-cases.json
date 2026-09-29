@@ -1,0 +1,1307 @@
+{
+  "cases": [
+    {
+      "id": "authApprove:AuthApprove",
+      "operationId": "authApprove",
+      "methodName": "AuthApprove",
+      "namespace": [
+        "auth"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "AuthId": "auth-1"
+      },
+      "argumentOrder": [
+        "AuthId"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "authRegister:AuthRegister",
+      "operationId": "authRegister",
+      "methodName": "AuthRegister",
+      "namespace": [
+        "auth"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "AuthId": "auth-1",
+        "User": "user"
+      },
+      "argumentOrder": [
+        "AuthId",
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "authReject:AuthReject",
+      "operationId": "authReject",
+      "methodName": "AuthReject",
+      "namespace": [
+        "auth"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "AuthId": "auth-1"
+      },
+      "argumentOrder": [
+        "AuthId"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "backfillNodeIPs:BackfillNodeIPs",
+      "operationId": "backfillNodeIPs",
+      "methodName": "BackfillNodeIPs",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Confirmed": false
+      },
+      "argumentOrder": [
+        "Confirmed"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "changes": [
+            "changes"
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "checkPolicy:CheckPolicy",
+      "operationId": "checkPolicy",
+      "methodName": "CheckPolicy",
+      "namespace": [
+        "policy"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Policy": "policy"
+      },
+      "argumentOrder": [
+        "Policy"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "createApiKey:CreateApiKey",
+      "operationId": "createApiKey",
+      "methodName": "CreateApiKey",
+      "namespace": [
+        "apiKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Expiration": "2024-01-01T00:00:00Z"
+      },
+      "argumentOrder": [
+        "Expiration"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "apiKey": "apiKey"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "createPreAuthKey:CreatePreAuthKey",
+      "operationId": "createPreAuthKey",
+      "methodName": "CreatePreAuthKey",
+      "namespace": [
+        "preAuthKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "AclTags": [
+          "aclTags"
+        ],
+        "Ephemeral": false,
+        "Expiration": "2024-01-01T00:00:00Z",
+        "Reusable": false,
+        "User": "user"
+      },
+      "argumentOrder": [
+        "AclTags",
+        "Ephemeral",
+        "Expiration",
+        "Reusable",
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "preAuthKey": {
+            "aclTags": [
+              "aclTags"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "ephemeral": false,
+            "expiration": "2024-01-01T00:00:00Z",
+            "id": "id-1",
+            "key": "key",
+            "reusable": false,
+            "used": false,
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "createUser:CreateUser",
+      "operationId": "createUser",
+      "methodName": "CreateUser",
+      "namespace": [
+        "users"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "DisplayName": "Example Name",
+        "Email": "user@example.com",
+        "Name": "Example Name",
+        "PictureUrl": "https://example.com"
+      },
+      "argumentOrder": [
+        "DisplayName",
+        "Email",
+        "Name",
+        "PictureUrl"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "user": {
+            "createdAt": "2024-01-01T00:00:00Z",
+            "displayName": "Example Name",
+            "email": "user@example.com",
+            "id": "id-1",
+            "name": "Example Name",
+            "profilePicUrl": "https://example.com",
+            "provider": "provider",
+            "providerId": "provider-1"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "debugCreateNode:DebugCreateNode",
+      "operationId": "debugCreateNode",
+      "methodName": "DebugCreateNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Key": "key",
+        "Name": "Example Name",
+        "Routes": [
+          "routes"
+        ],
+        "User": "user"
+      },
+      "argumentOrder": [
+        "Key",
+        "Name",
+        "Routes",
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "deleteApiKey:DeleteApiKey",
+      "operationId": "deleteApiKey",
+      "methodName": "DeleteApiKey",
+      "namespace": [
+        "apiKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Prefix": "prefix",
+        "Id": "id-1"
+      },
+      "argumentOrder": [
+        "Prefix",
+        "Id"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "deleteNode:DeleteNode",
+      "operationId": "deleteNode",
+      "methodName": "DeleteNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1"
+      },
+      "argumentOrder": [
+        "NodeId"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "deletePreAuthKey:DeletePreAuthKey",
+      "operationId": "deletePreAuthKey",
+      "methodName": "DeletePreAuthKey",
+      "namespace": [
+        "preAuthKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Id": "id-1"
+      },
+      "argumentOrder": [
+        "Id"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "deleteUser:DeleteUser",
+      "operationId": "deleteUser",
+      "methodName": "DeleteUser",
+      "namespace": [
+        "users"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Id": "id-1"
+      },
+      "argumentOrder": [
+        "Id"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "expireApiKey:ExpireApiKey",
+      "operationId": "expireApiKey",
+      "methodName": "ExpireApiKey",
+      "namespace": [
+        "apiKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Id": "id-1",
+        "Prefix": "prefix"
+      },
+      "argumentOrder": [
+        "Id",
+        "Prefix"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "expireNode:ExpireNode",
+      "operationId": "expireNode",
+      "methodName": "ExpireNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1",
+        "DisableExpiry": false,
+        "Expiry": "2024-01-01T00:00:00Z"
+      },
+      "argumentOrder": [
+        "NodeId",
+        "DisableExpiry",
+        "Expiry"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "expirePreAuthKey:ExpirePreAuthKey",
+      "operationId": "expirePreAuthKey",
+      "methodName": "ExpirePreAuthKey",
+      "namespace": [
+        "preAuthKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Id": "id-1"
+      },
+      "argumentOrder": [
+        "Id"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {},
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getNode:GetNode",
+      "operationId": "getNode",
+      "methodName": "GetNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1"
+      },
+      "argumentOrder": [
+        "NodeId"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "getPolicy:GetPolicy",
+      "operationId": "getPolicy",
+      "methodName": "GetPolicy",
+      "namespace": [
+        "policy"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "policy": "policy",
+          "updatedAt": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "health:Health",
+      "operationId": "health",
+      "methodName": "Health",
+      "namespace": [
+        "health"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "databaseConnectivity": false
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "listApiKeys:ListApiKeys",
+      "operationId": "listApiKeys",
+      "methodName": "ListApiKeys",
+      "namespace": [
+        "apiKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "apiKeys": [
+            {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "lastSeen": "2024-01-01T00:00:00Z",
+              "prefix": "prefix"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "listNodes:ListNodes",
+      "operationId": "listNodes",
+      "methodName": "ListNodes",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user"
+      },
+      "argumentOrder": [
+        "User"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "nodes": [
+            {
+              "approvedRoutes": [
+                "approvedRoutes"
+              ],
+              "availableRoutes": [
+                "availableRoutes"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "discoKey": "discoKey",
+              "expiry": "2024-01-01T00:00:00Z",
+              "givenName": "Example Name",
+              "id": "id-1",
+              "ipAddresses": [
+                "ipAddresses"
+              ],
+              "lastSeen": "2024-01-01T00:00:00Z",
+              "machineKey": "machineKey",
+              "name": "Example Name",
+              "nodeKey": "nodeKey",
+              "online": false,
+              "preAuthKey": {
+                "aclTags": [
+                  "aclTags"
+                ],
+                "createdAt": "2024-01-01T00:00:00Z",
+                "ephemeral": false,
+                "expiration": "2024-01-01T00:00:00Z",
+                "id": "id-1",
+                "key": "key",
+                "reusable": false,
+                "used": false,
+                "user": {
+                  "createdAt": "2024-01-01T00:00:00Z",
+                  "displayName": "Example Name",
+                  "email": "user@example.com",
+                  "id": "id-1",
+                  "name": "Example Name",
+                  "profilePicUrl": "https://example.com",
+                  "provider": "provider",
+                  "providerId": "provider-1"
+                }
+              },
+              "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+              "subnetRoutes": [
+                "subnetRoutes"
+              ],
+              "tags": [
+                "tags"
+              ],
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "listPreAuthKeys:ListPreAuthKeys",
+      "operationId": "listPreAuthKeys",
+      "methodName": "ListPreAuthKeys",
+      "namespace": [
+        "preAuthKeys"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {},
+      "argumentOrder": [],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "preAuthKeys": [
+            {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "listUsers:ListUsers",
+      "operationId": "listUsers",
+      "methodName": "ListUsers",
+      "namespace": [
+        "users"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Id": "id-1",
+        "Name": "Example Name",
+        "Email": "user@example.com"
+      },
+      "argumentOrder": [
+        "Id",
+        "Name",
+        "Email"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "users": [
+            {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          ]
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "registerNode:RegisterNode",
+      "operationId": "registerNode",
+      "methodName": "RegisterNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "User": "user",
+        "Key": "key"
+      },
+      "argumentOrder": [
+        "User",
+        "Key"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "renameNode:RenameNode",
+      "operationId": "renameNode",
+      "methodName": "RenameNode",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1",
+        "NewName": "Example Name"
+      },
+      "argumentOrder": [
+        "NodeId",
+        "NewName"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "renameUser:RenameUser",
+      "operationId": "renameUser",
+      "methodName": "RenameUser",
+      "namespace": [
+        "users"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "OldId": "old-1",
+        "NewName": "Example Name"
+      },
+      "argumentOrder": [
+        "OldId",
+        "NewName"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "user": {
+            "createdAt": "2024-01-01T00:00:00Z",
+            "displayName": "Example Name",
+            "email": "user@example.com",
+            "id": "id-1",
+            "name": "Example Name",
+            "profilePicUrl": "https://example.com",
+            "provider": "provider",
+            "providerId": "provider-1"
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "setApprovedRoutes:SetApprovedRoutes",
+      "operationId": "setApprovedRoutes",
+      "methodName": "SetApprovedRoutes",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1",
+        "Routes": [
+          "routes"
+        ]
+      },
+      "argumentOrder": [
+        "NodeId",
+        "Routes"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "setPolicy:SetPolicy",
+      "operationId": "setPolicy",
+      "methodName": "SetPolicy",
+      "namespace": [
+        "policy"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "Policy": "policy"
+      },
+      "argumentOrder": [
+        "Policy"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "policy": "policy",
+          "updatedAt": "2024-01-01T00:00:00Z"
+        },
+        "byteLength": 0
+      }
+    },
+    {
+      "id": "setTags:SetTags",
+      "operationId": "setTags",
+      "methodName": "SetTags",
+      "namespace": [
+        "nodes"
+      ],
+      "mode": "normal",
+      "owner": null,
+      "arguments": {
+        "NodeId": "node-1",
+        "Tags": [
+          "tags"
+        ]
+      },
+      "argumentOrder": [
+        "NodeId",
+        "Tags"
+      ],
+      "response": {
+        "kind": "json",
+        "expected": {
+          "node": {
+            "approvedRoutes": [
+              "approvedRoutes"
+            ],
+            "availableRoutes": [
+              "availableRoutes"
+            ],
+            "createdAt": "2024-01-01T00:00:00Z",
+            "discoKey": "discoKey",
+            "expiry": "2024-01-01T00:00:00Z",
+            "givenName": "Example Name",
+            "id": "id-1",
+            "ipAddresses": [
+              "ipAddresses"
+            ],
+            "lastSeen": "2024-01-01T00:00:00Z",
+            "machineKey": "machineKey",
+            "name": "Example Name",
+            "nodeKey": "nodeKey",
+            "online": false,
+            "preAuthKey": {
+              "aclTags": [
+                "aclTags"
+              ],
+              "createdAt": "2024-01-01T00:00:00Z",
+              "ephemeral": false,
+              "expiration": "2024-01-01T00:00:00Z",
+              "id": "id-1",
+              "key": "key",
+              "reusable": false,
+              "used": false,
+              "user": {
+                "createdAt": "2024-01-01T00:00:00Z",
+                "displayName": "Example Name",
+                "email": "user@example.com",
+                "id": "id-1",
+                "name": "Example Name",
+                "profilePicUrl": "https://example.com",
+                "provider": "provider",
+                "providerId": "provider-1"
+              }
+            },
+            "registerMethod": "REGISTER_METHOD_UNSPECIFIED",
+            "subnetRoutes": [
+              "subnetRoutes"
+            ],
+            "tags": [
+              "tags"
+            ],
+            "user": {
+              "createdAt": "2024-01-01T00:00:00Z",
+              "displayName": "Example Name",
+              "email": "user@example.com",
+              "id": "id-1",
+              "name": "Example Name",
+              "profilePicUrl": "https://example.com",
+              "provider": "provider",
+              "providerId": "provider-1"
+            }
+          }
+        },
+        "byteLength": 0
+      }
+    }
+  ]
+}
